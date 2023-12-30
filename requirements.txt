@@ -2,4 +2,3 @@ tabulate
 flask
 tls_client
 datetime
-json
