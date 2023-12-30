@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 import json
 import tls_client
-from logos import team_logos
 from datetime import datetime
 app = Flask(__name__)
 
@@ -202,7 +201,7 @@ def index():
     if table_data:
         headers = ["Player", "Stat Type", "Team",
                    "PrizePicks Line", "AI", "L5%", "SZN", "Last 5 days"]
-        return render_template('index.html', table_data=table_data, headers=headers, team_logos=team_logos)
+        return render_template('index.html', table_data=table_data, headers=headers)
     else:
         return "Failed to retrieve data from API"
 
