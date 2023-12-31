@@ -4,4 +4,3 @@ tls_client
 datetime
 gunicorn
 gevent
-sqlite3
